@@ -66,9 +66,8 @@ model=LogisticRegression(solver="liblinear")
 model.fit(x_train,y_train)
 y_pred=model.predict(x_test)
 ```
-### 6.ACCURACY SCORE:
-### 7.CONFUSION MATRIX:
-### 8.Classification Report::
+
+### 6.Classification Report::
 ```
 from sklearn.metrics import accuracy_score,confusion_matrix,classification_report
 accuracy=accuracy_score(y_test,y_pred)
@@ -78,7 +77,7 @@ print("Accuracy score:",accuracy)
 print("\nConfusion matrix:\n",confusion)
 print("\nClassification Report:\n",cr)
 ```
-### 9.CONFUSION MATRIX IN DISPLAY FORMAT:
+### 7.CONFUSION MATRIX IN DISPLAY FORMAT:
 ```
 from sklearn import metrics
 cm_display=metrics.ConfusionMatrixDisplay(confusion_matrix=confusion,display_labels=[True,False])
